@@ -158,15 +158,22 @@ class Solution:
                 return
 
             if not root.left and not root.right:
-                l.append(str(root.val))
+                l += str(root.val)
                 path.append(l)
                 return
-            
-            l.append(str(root.val)+'->')
 
-            dfs(root.left, l.copy())
-            dfs(root.right, l.copy())
+            l += str(root.val) + "->"
+
+            dfs(root.left, l)
+            dfs(root.right, l)
 
         dfs(root)
 
         return path
+
+
+# 404. Sum of Left Leaves
+
+class Solution:
+    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        
