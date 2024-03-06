@@ -144,3 +144,11 @@ class WordDictionary:
 # obj = WordDictionary()
 # obj.addWord(word)
 # param_2 = obj.search(word)
+
+
+# 257. Binary Tree Paths
+
+class Solution:
+    def binaryTreePaths(self, root) -> List[str]:
+        pass
+        
