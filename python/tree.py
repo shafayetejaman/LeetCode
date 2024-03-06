@@ -152,9 +152,9 @@ class WordDictionary:
 class Solution:
     def binaryTreePaths(self, root) -> List[str]:
         path = []
-        
-        def dfs(root, ):
-            pass
+
+        def dfs(root, l):
             
-        dfs(root=root, [].copy())
+
+        dfs(root=root, l=[].copy())
         return path
