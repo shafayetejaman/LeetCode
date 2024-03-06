@@ -176,4 +176,4 @@ class Solution:
 
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        
+        pass
