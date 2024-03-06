@@ -174,19 +174,20 @@ class Solution:
 
 # 404. Sum of Left Leaves
 
+
 class Solution:
     def sumOfLeftLeaves(self, root) -> int:
-        
+
         def dfs(root, parent):
             if not root:
                 return 0
-            
-            if not root.left and not root.right and root == parent.left:
+
+            if not root.left and not root.right and parent and root == parent.left:
                 return root.val
-            
-            _sum = self.sumOfLeftLeaves(root.left, root)
-            _sum += self.sumOfLeftLeaves(root.right, root)
-            
+
+            _sum = dfs(root.left, root)
+            _sum += dfs(root.right, root)
+
             return _sum
-        
+
         return dfs(root, None)
