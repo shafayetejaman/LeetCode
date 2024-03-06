@@ -175,5 +175,13 @@ class Solution:
 # 404. Sum of Left Leaves
 
 class Solution:
-    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        pass
+    def sumOfLeftLeaves(self, root) -> int:
+        if not root:
+            return 0
+        if root:
+            return root.val
+        
+        _sum = self.sumOfLeftLeaves(root.left)
+        self.sumOfLeftLeaves(root.right)
+        
+        return _sum
