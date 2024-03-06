@@ -178,10 +178,10 @@ class Solution:
     def sumOfLeftLeaves(self, root) -> int:
         if not root:
             return 0
-        if root:
+        if not root.left and not root.right:
             return root.val
         
         _sum = self.sumOfLeftLeaves(root.left)
-        self.sumOfLeftLeaves(root.right)
+        _sum += self.sumOfLeftLeaves(root.right)
         
         return _sum
