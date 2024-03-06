@@ -156,12 +156,17 @@ class Solution:
         def dfs(root, l=[]):
             if not root:
                 return
-            
+
             if not root.left and not root.right:
-                
-                
+                l.append(root.val)
+                path.append(l)
+                return
             
+            l.append(root.val)
+
+            dfs(root.left, l.copy())
+            dfs(root.right, l.copy())
 
         dfs(root)
-        
+
         return path
