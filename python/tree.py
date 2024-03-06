@@ -148,7 +148,12 @@ class WordDictionary:
 
 # 257. Binary Tree Paths
 
+
 class Solution:
     def binaryTreePaths(self, root) -> List[str]:
-        pass
+        path = []
         
+        def dfs(root, ):
+            
+        dfs(root=root,[])
+        return path
