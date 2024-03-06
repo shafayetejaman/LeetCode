@@ -158,11 +158,11 @@ class Solution:
                 return
 
             if not root.left and not root.right:
-                l.append(root.val)
-                path.append(l.join('->'))
+                l += str(root.val)
+                path.append(l)
                 return
-            
-            l.append(root.val)
+
+            l += str(root.val) + "->"
 
             dfs(root.left, l.copy())
             dfs(root.right, l.copy())
