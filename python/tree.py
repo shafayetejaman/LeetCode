@@ -153,8 +153,14 @@ class Solution:
     def binaryTreePaths(self, root) -> List[str]:
         path = []
 
-        def dfs(root, l):
+        def dfs(root, l=[]):
+            if not root:
+                return
+            
+            if root.:
+                
             
 
-        dfs(root=root, l=[].copy())
+        dfs(root)
+        
         return path
