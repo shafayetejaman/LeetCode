@@ -159,7 +159,7 @@ class Solution:
 
             if not root.left and not root.right:
                 l.append(root.val)
-                path.append(l)
+                path.append(l.join('->'))
                 return
             
             l.append(root.val)
@@ -169,4 +169,4 @@ class Solution:
 
         dfs(root)
 
-        return str(path).join('->')
+        return path
