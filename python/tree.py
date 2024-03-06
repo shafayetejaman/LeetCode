@@ -121,7 +121,7 @@ class WordDictionary:
         curr.end = True
 
     def search(self, word: str) -> bool:
-        
+
         def fun(idx, curr):
             if idx == len(word):
                 return curr.end
