@@ -169,4 +169,4 @@ class Solution:
 
         dfs(root)
 
-        return path
+        return str(path).join('->')
