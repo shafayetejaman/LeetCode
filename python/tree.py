@@ -157,7 +157,8 @@ class Solution:
             if not root:
                 return
             
-            if root.:
+            if not root.left and not root.right:
+                
                 
             
 
