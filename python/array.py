@@ -52,3 +52,5 @@ class Solution:
         nums.remove(max(nums))
 
         return max(nums)
+
+
