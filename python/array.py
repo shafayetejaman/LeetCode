@@ -40,6 +40,7 @@ class Solution:
 
 # 414. Third Maximum Number
 
+
 class Solution:
     def thirdMax(self, nums) -> int:
         nums = set(nums)
@@ -55,15 +56,16 @@ class Solution:
 
 # 1346. Check If N and Its Double Exist
 
+
 class Solution:
     def checkIfExist(self, arr) -> bool:
         se = set()
 
         for i in arr:
             se.add(i)
-            
+
         for i in se:
-            if i* 2 in se:
+            if i != 0 and i * 2 in se:
                 return True
-    
+
         return False
