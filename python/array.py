@@ -60,9 +60,14 @@ class Solution:
 class Solution:
     def checkIfExist(self, arr) -> bool:
         se = set()
+        zero = 0
+        arr = []
+        
 
         for i in arr:
             se.add(i)
+            if i == 0:
+                zero+=1
 
         for i in se:
             if i != 0 and i * 2 in se:
