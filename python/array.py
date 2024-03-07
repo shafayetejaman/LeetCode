@@ -40,9 +40,8 @@ class Solution:
 
 # 414. Third Maximum Number
 
-
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums) -> int:
         nums = set(nums)
 
         if len(nums) < 3:
@@ -57,5 +56,5 @@ class Solution:
 # 1346. Check If N and Its Double Exist
 
 class Solution:
-    def checkIfExist(self, arr: List[int]) -> bool:
-        pass
+    def checkIfExist(self, arr) -> bool:
+        
