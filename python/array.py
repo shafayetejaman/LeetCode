@@ -57,4 +57,13 @@ class Solution:
 
 class Solution:
     def checkIfExist(self, arr) -> bool:
-        
+        se = set()
+
+        for i in arr:
+            se.add(i)
+            
+        for i in se:
+            if i* 2 in se:
+                return True
+    
+        return False
