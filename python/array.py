@@ -36,3 +36,10 @@ class Solution:
             _sum += m[s[i]]
 
         return _sum
+
+
+# 414. Third Maximum Number
+
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        pass 
