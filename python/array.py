@@ -44,15 +44,28 @@ class Solution:
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         nums = set(nums)
-        ans = [nums[0]]
-        
-        if nu
+        nums = list(nums)
+        ans = [max(nums)]
+
+      
+        if len(nums) < 3:
+            return ans[0]
+
+        ans.append(nums[1])
+        ans.append(nums[2])
 
         for i in nums:
-            if ans[0] < i:
-                ans[0] = i
-                
-        for i in nums:
-            
+            if i == ans[0]:
+                continue
+
             if ans[1] < i:
                 ans[1] = i
+
+        for i in nums:
+            if i == ans[0] or i == ans[1]:
+                continue
+
+            if ans[2] < i:
+                ans[2] = i
+
+        return ans[2]
