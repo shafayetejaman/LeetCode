@@ -54,3 +54,8 @@ class Solution:
         return max(nums)
 
 
+# 1346. Check If N and Its Double Exist
+
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        pass
