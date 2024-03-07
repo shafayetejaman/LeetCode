@@ -43,5 +43,8 @@ class Solution:
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         unique_arr = []
-        m
+        m = {}
+        
+        for i in nums:
+            unique_arr.append()
         
