@@ -42,4 +42,6 @@ class Solution:
 
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
+        unique_arr = []
         m
+        
