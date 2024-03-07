@@ -46,5 +46,10 @@ class Solution:
         m = {}
         
         for i in nums:
-            unique_arr.append()
+            if i in m:
+                continue
+            unique_arr.append(i)
+            m[i] = True
+        
+        first = 
         
