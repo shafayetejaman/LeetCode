@@ -40,8 +40,19 @@ class Solution:
 
 # 414. Third Maximum Number
 
+
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
-       nums = set(nums)
+        nums = set(nums)
+        ans = [nums[0]]
         
-        
+        if nu
+
+        for i in nums:
+            if ans[0] < i:
+                ans[0] = i
+                
+        for i in nums:
+            
+            if ans[1] < i:
+                ans[1] = i
