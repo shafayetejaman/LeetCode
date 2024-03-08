@@ -3,5 +3,6 @@
 int main()
 {
     printf("i am a 👶\n");
-    return 0;
+
+    return -1;
 }
