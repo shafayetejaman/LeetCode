@@ -3,16 +3,19 @@
 
 using namespace std;
 
-
-void solve()
+void solve(int arr2[])
 {
-    cout << arr[0] << endl;
+    cout << arr2[0] << endl;
 }
 
 int main()
 {
+    int arr[] = {10};
 
-    // solve(10);
+    solve(arr);
+    solve(arr);
+    solve(arr);
+    solve(arr);
 
     return 0;
 }
