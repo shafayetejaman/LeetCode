@@ -6,29 +6,29 @@ void conquer(int arr[], int si, int mid, int ei)
     int idx1 = si;
     int idx2 = ei;
     int x = 0;
-    
+
     while (arr[idx1] <= mid && arr[idx2] <= ei)
     {
         if (arr[idx1] <= arr[idx2])
         {
-            marge[x++] = arr[idx1++];
+            merge[x++] = arr[idx1++];
         }
         else
         {
-            marge[x++] = arr[idx2];
+            merge[x++] = arr[idx2];
         }
         while (arr[idx1] <= mid)
         {
-            marge[x++] = arr[idx1++];
+            merge[x++] = arr[idx1++];
         }
 
         while (arr[idx2] <= ei)
         {
-            marge[x++] = arr[idx1++];
+            merge[x++] = arr[idx1++];
         }
-        for (int i = 0, j = si; i < marge.length(); i++, j++)
+        for (int i = 0, j = si; i < merge.size(); i++, j++)
         {
-            arr[i] = marge[i];
+            arr[i] = merge[i];
         }
     }
 
@@ -44,13 +44,14 @@ void devide(int arr[], int si, int ei)
 
 int main()
 {
-    int n;
-    int arr[n] = {1, 3, 4, 5, 56, 67, 78, };
-    devide(arr, 0, n - 1);
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    // int n;
+    // int arr[n] = {1, 3, 4, 5, 56, 67, 78, };
+    // devide(arr, 0, n - 1);
+    cout << sizeof(int) << endl;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
 
     return 0;
 }
