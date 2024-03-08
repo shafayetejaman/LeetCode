@@ -47,7 +47,12 @@ int main()
     // int n;
     // int arr[n] = {1, 3, 4, 5, 56, 67, 78, };
     // devide(arr, 0, n - 1);
-    cout << sizeof(int) << endl;
+    cout << "int :" << sizeof(int) << endl;
+    cout << "long : " << sizeof(long) << endl;
+    cout << "long long : " << sizeof(long long) << endl;
+    cout << "float : " << sizeof(float) << endl;
+    cout << "double : " << sizeof(double) << endl;
+    cout << "long double : " << sizeof(long double) << endl;
     // for (int i = 0; i < n; i++)
     // {
     //     cout << arr[i] << " ";
