@@ -1,5 +1,5 @@
 {
-    "errorLens.fontSize": "13",
+    "errorLens.fontSize": "14",
     "editor.suggest.snippetsPreventQuickSuggestions": true,
     "C_Cpp.suggestSnippets": true,
     "editor.snippetSuggestions": "inline",
