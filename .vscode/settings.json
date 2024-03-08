@@ -1,6 +1,5 @@
-
 {
-    "errorLens.fontSize": "13"
+    "errorLens.fontSize": "13",
     "editor.suggest.snippetsPreventQuickSuggestions": true,
     "C_Cpp.suggestSnippets": true,
     "editor.snippetSuggestions": "inline",
@@ -211,7 +210,6 @@
     "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
     "terminal.integrated.focusAfterRun": "terminal",
     "editor.suggest.showFunctions": true,
-    "errorLens.fontSize": "15",
     "errorLens.gutterIconsEnabled": false,
     "errorLens.gutterIconsFollowCursorOverride": true,
     "javascript.suggest.completeFunctionCalls": true,
