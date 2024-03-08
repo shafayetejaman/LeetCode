@@ -3,9 +3,9 @@
 
 using namespace std;
 
-void solve(int arr[])
+void solve(int arr2[] = arr)
 {
-    cout << arr << endl;
+    cout << arr2 << endl;
 }
 
 int main()
