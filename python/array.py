@@ -77,15 +77,22 @@ class Solution:
 
 # 80. Remove Duplicates from Sorted Array II
 
+
 class Solution:
     def removeDuplicates(self, nums) -> int:
         l, r = 0, 0
 
         while r < len(nums):
             cnt = 1
-            
-            while r < len(nums)-1 and nums[l] == nums[r+1]:
-                cnt+=1
-                r+=1
+
+            while r < len(nums) - 1 and nums[l] == nums[r + 1]:
+                cnt += 1
+                r += 1
+
+            for _ in range(min(2, cnt)):
+                nums[l] = nums[r]
+                l += 1
                 
-            for i in 
+            r += 1
+
+        return l
