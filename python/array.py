@@ -79,4 +79,13 @@ class Solution:
 
 class Solution:
     def removeDuplicates(self, nums) -> int:
-        pass 
+        l, r = 0, 0
+
+        while r < len(nums):
+            cnt = 1
+            
+            while r < len(nums)-1 and nums[l] == nums[r+1]:
+                cnt+=1
+                r+=1
+                
+            for i in 
