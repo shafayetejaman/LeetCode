@@ -85,7 +85,7 @@ class Solution:
         while r < len(nums):
             cnt = 1
 
-            while r < len(nums) - 1 and nums[l] == nums[r + 1]:
+            while r < len(nums) - 1 and nums[r] == nums[r + 1]:
                 cnt += 1
                 r += 1
 
