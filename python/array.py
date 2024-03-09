@@ -66,10 +66,17 @@ class Solution:
         for i in arr:
             se.add(i)
             if i == 0:
-                zero+=1
+                zero += 1
 
         for i in se:
             if i != 0 and i * 2 in se:
                 return True
 
         return False
+
+
+# 80. Remove Duplicates from Sorted Array II
+
+class Solution:
+    def removeDuplicates(self, nums) -> int:
+        pass 
