@@ -97,6 +97,4 @@ class Solution:
 
         return l
 
-
-# 169. Majority Element
 arrq
