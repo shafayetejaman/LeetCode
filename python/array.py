@@ -100,6 +100,10 @@ class Solution:
 
 # 169. Majority Element
 
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        
+        ans, cnt = 0, 0
+
+        for i in nums:
+            
