@@ -106,4 +106,12 @@ class Solution:
         ans, cnt = 0, 0
 
         for i in nums:
+            if cnt == 0:
+                ans = i
             
+            if i != ans:
+                cnt -=1
+            else:
+                cnt += 1
+                
+        return ans
