@@ -97,4 +97,3 @@ class Solution:
 
         return l
 
-arrq
