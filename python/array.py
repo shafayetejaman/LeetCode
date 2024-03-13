@@ -122,3 +122,4 @@ class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         idx = len(s)-1
         
+        while 
