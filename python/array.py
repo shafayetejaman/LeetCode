@@ -101,5 +101,5 @@ class Solution:
 # 169. Majority Element
 
 class Solution:
-    def majorityElement(self, nums) -> int:
-        pass
+    def majorityElement(self, nums: List[int]) -> int:
+        
