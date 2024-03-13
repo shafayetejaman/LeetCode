@@ -115,3 +115,10 @@ class Solution:
                 cnt += 1
                 
         return ans
+    
+# 58. Length of Last Word   
+       
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        idx = len(s)-1
+        
