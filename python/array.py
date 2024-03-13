@@ -120,6 +120,11 @@ class Solution:
        
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        idx = len(s)-1
+        idx, cnt = len(s)-1, 0
         
-        while 
+        while s[idx] == ' ':
+            idx -= 1
+            
+        while idx >= 0 and s[idx].isalpha():
+            cnt+=1
+        
