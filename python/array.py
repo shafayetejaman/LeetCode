@@ -128,3 +128,4 @@ class Solution:
         while idx >= 0 and s[idx].isalpha():
             cnt+=1
         
+        return cnt
