@@ -99,4 +99,4 @@ class Solution:
 
 
 # 169. Majority Element
-a
+arr
