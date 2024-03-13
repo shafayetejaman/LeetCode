@@ -108,24 +108,26 @@ class Solution:
         for i in nums:
             if cnt == 0:
                 ans = i
-            
+
             if i != ans:
                 cnt -=1
             else:
                 cnt += 1
-                
+
         return ans
-    
-# 58. Length of Last Word   
-       
+
+# 58. Length of Last Word
+
+
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        idx, cnt = len(s)-1, 0
-        
-        while s[idx] == ' ':
+        idx, cnt = len(s) - 1, 0
+
+        while s[idx] == " ":
             idx -= 1
-            
+
         while idx >= 0 and s[idx].isalpha():
-            cnt+=1
-        
+            cnt += 1
+            idx -= 1
+
         return cnt
