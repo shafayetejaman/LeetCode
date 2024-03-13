@@ -97,3 +97,9 @@ class Solution:
 
         return l
 
+
+# 169. Majority Element
+
+class Solution:
+    def majorityElement(self, nums) -> int:
+        pass
