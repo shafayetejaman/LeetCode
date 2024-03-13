@@ -92,7 +92,10 @@ class Solution:
             for _ in range(min(2, cnt)):
                 nums[l] = nums[r]
                 l += 1
-                
+
             r += 1
 
         return l
+
+
+# 169. Majority Element
