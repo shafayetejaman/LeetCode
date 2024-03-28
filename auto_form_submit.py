@@ -21,7 +21,7 @@ def main():
     textboxes = browser.find_elements(
         By.CLASS_NAME, "quantumWizTextinputPaperinputInput"
     )
-    checkbox = browser.find_element(By.XPATH, '//*[@id="i18"]/div[2]')
+    checkbox = browser.find_element(By.XPATH, '//*[@id="i5"]')
     submit_button = browser.find_element(
         By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span'
     )
