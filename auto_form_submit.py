@@ -3,10 +3,17 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 form_link = "https://docs.google.com/forms/d/e/1FAIpQLSeZLgEKjFpRhDlEGJ_A_oHMjx_iawd0gCiuFB4f7CTMa7H9cg/viewform"
-# form_link = "https://docs.google.com/forms/d/e/1FAIpQLScSZzLetdC7yvCmpkmn7fVEcMdhSkmpXIGdMTqVcuRmlgnrwQ/formrestricted"
 
+person_1_data = {
+    "Last Name": "Boerhout",
+    "First Name": "Sean",
+    "ID": "12345",
+    "Date of Birth": "1990-05-15",
+    "Favorite Color": "Blue",
+    "Email": "sean@example.com",
+    "Agree to Terms": True,
+}
 
-person_1_data = {"Last Name": "Boerhout", "First Name": "Sean", "ID": "12345"}
 all_data = [person_1_data]
 
 
@@ -21,7 +28,9 @@ def main():
     textboxes = browser.find_elements(
         By.CLASS_NAME, "quantumWizTextinputPaperinputInput"
     )
-    checkbox = browser.find_element(By.XPATH, '//*[@id="i5"]')
+    dropdown = browser.find_element(By.XPATH, '//*[@id="i7"]/div[3]/div')
+    email_field = browser.find_element(By.XPATH, '//*[@id="i9"]/div[3]/div')
+    checkbox = browser.find_element(By.XPATH, '//*[@id="i11"]')
     submit_button = browser.find_element(
         By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span'
     )
@@ -30,6 +39,11 @@ def main():
         textboxes[0].send_keys(person["Last Name"])
         textboxes[1].send_keys(person["First Name"])
         textboxes[2].send_keys(person["ID"])
+        textboxes[3].send_keys(person["Date of Birth"])
+        dropdown.click()
+        option = browser.find_element(By.XPATH, "//div[contains(text(), 'Blue')]")
+        option.click()
+        email_field.send_keys(person["Email"])
         checkbox.click()
         submit_button.click()
 
