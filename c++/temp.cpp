@@ -38,7 +38,9 @@ typedef vector<string> vs;
 
 void solve()
 {
-    cout << "hi" << endl;
+    string x;
+    cin >> x;
+    cout << x << endl;
 
     // cout << ln;
 }
