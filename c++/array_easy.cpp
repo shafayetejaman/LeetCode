@@ -49,6 +49,8 @@ public:
             ans[i] = nums[nums[i]];
         }
         return ans;
+
+
     }
 };
 
@@ -115,27 +117,28 @@ public:
     vector<vector<int>> flipAndInvertImage(vector<vector<int>>& image)
     {
         for (auto& i : image)
-        for (auto& i : image)
-        {
-            reverse(i.begin(), i.end());
-        }
-        for (auto& i : image)
-        for (auto& i : image)
-        {
-            for (auto& j : i)
-            for (auto& j : i)
+            for (auto& i : image)
             {
-                if (j == 0)
-                {
-                    j = 1;
-                }
-                else
-                {
-                    j = 0;
-                }
+                reverse(i.begin(), i.end());
             }
-        }
+        for (auto& i : image)
+            for (auto& i : image)
+            {
+                for (auto& j : i)
+                    for (auto& j : i)
+                    {
+                        if (j == 0)
+                        {
+                            j = 1;
+                        }
+                        else
+                        {
+                            j = 0;
+                        }
+                    }
+            }
         return image;
+
     }
 };
 
@@ -150,28 +153,28 @@ public:
         vector<vector<int>> v(m, vector<int>(n, 0));
 
         for (auto& i : indices)
-        for (auto& i : indices)
-        {
-            for (auto j = 0; j < n; j++)
+            for (auto& i : indices)
             {
-                v[i[0]][j]++;
+                for (auto j = 0; j < n; j++)
+                {
+                    v[i[0]][j]++;
+                }
+                for (auto j = 0; j < m; j++)
+                {
+                    v[j][i[1]]++;
+                }
             }
-            for (auto j = 0; j < m; j++)
-            {
-                v[j][i[1]]++;
-            }
-        }
 
         for (auto& i : v)
-        for (auto& i : v)
-        {
-            for (auto& j : i)
-            for (auto& j : i)
+            for (auto& i : v)
             {
-                if (j % 2 == 1)
-                    count++;
+                for (auto& j : i)
+                    for (auto& j : i)
+                    {
+                        if (j % 2 == 1)
+                            count++;
+                    }
             }
-        }
         return count;
     }
 };
@@ -214,6 +217,7 @@ public:
             col--;
         }
         return sum;
+
     }
 };
 
@@ -227,16 +231,16 @@ public:
         int count = 0;
 
         for (auto& i : nums)
-        for (auto& i : nums)
-        {
-            v.push_back(log(i) / log(10) + 1);
-        }
+            for (auto& i : nums)
+            {
+                v.push_back(log(i) / log(10) + 1);
+            }
         for (auto& i : v)
-        for (auto& i : v)
-        {
-            if (i % 2 == 0)
-                count++;
-        }
+            for (auto& i : v)
+            {
+                if (i % 2 == 0)
+                    count++;
+            }
         return count;
     }
 };
@@ -320,18 +324,18 @@ public:
         vector<int> in;
 
         for (const auto& i : s)
-        for (const auto& i : s)
-        {
-            auto it = m.find(i);
-            if (it == m.end())
+            for (const auto& i : s)
             {
-                return false;
+                auto it = m.find(i);
+                if (it == m.end())
+                {
+                    return false;
+                }
+                else
+                {
+                    in.push_back(it->second);
+                }
             }
-            else
-            {
-                in.push_back(it->second);
-            }
-        }
         for (auto i = 0; i < in.size() - 1; i++)
         {
             if (in[i] > in[i + 1])
@@ -354,10 +358,10 @@ public:
         while (true)
         {
             for (const auto& i : arr)
-            for (const auto& i : arr)
-            {
-                sum += pow((i - '0'), 2);
-            }
+                for (const auto& i : arr)
+                {
+                    sum += pow((i - '0'), 2);
+                }
             if (sum == 1)
             {
                 return true;
