@@ -26,6 +26,7 @@ void bfs(int s, bool print)
             q.push(child);
             visited[child] = true;
             level[child] = level[parent] + 1;
+        
             
 
         }
