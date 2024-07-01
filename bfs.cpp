@@ -26,12 +26,9 @@ void bfs(int s)
 }
 int main()
 {
-    for (int i = 0; i < N; i++)
-    {
-        level[i] = -1;
-    }
     int n, m;
     cin >> n >> m;
+
     for (int i = 0; i < m; i++)
     {
         int u, v;
@@ -39,11 +36,14 @@ int main()
         adjlist[u].push_back(v);
         adjlist[v].push_back(u);
     }
+
     bfs(0);
+    
     int target;
     cin >> target;
     vector<int>kyl;
-    for (int i = 0; i < n; i++)
+
+    for (int i = 0; i <= n; i++)
     {
         if (level[i] == target)
         {
