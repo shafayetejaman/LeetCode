@@ -17,6 +17,7 @@ void bfs(int s)
         for (int c = 0; c < adjlist[p].size();c++)
         {
             int child = adjlist[p][c];
+            
             if (visited[child])continue;
             q.push(child);
             visited[child] = true;
@@ -38,7 +39,7 @@ int main()
     }
 
     bfs(0);
-    
+
     int target;
     cin >> target;
     vector<int>kyl;
