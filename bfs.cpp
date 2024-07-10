@@ -4,6 +4,7 @@ const int N = 1e5 + 5;
 vector<int>adjlist[N];
 bool visited[N];
 int level[N];
+
 void bfs(int s)
 {
     visited[s] = true;
