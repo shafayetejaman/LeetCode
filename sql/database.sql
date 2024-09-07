@@ -1,3 +1,4 @@
+
 SELECT firstName, lastName, city, state
 FROM Person AS p
     LEFT JOIN Address AS a ON p.personId = a.personId
@@ -20,8 +21,6 @@ FROM Person AS p1
     JOIN Person AS p2 ON p1.email = p2.email
 WHERE
     p1.id < p2.id
-
-
 
 -- 177. Nth Highest Salary
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT

@@ -130,6 +130,9 @@ class Solution:
             cnt += 1
             idx -= 1
 
+        
         return cnt
+
     
+sorted()
     

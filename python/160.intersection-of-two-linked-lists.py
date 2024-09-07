@@ -12,6 +12,9 @@
 #         self.next = None
 
 
+import time
+
+
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         """
@@ -46,7 +49,18 @@ class Solution(object):
             a=a.next
             b=b.next
 
+
         return None
+    
+    def fun(self, s: str) -> None:
+        self.getIntersectionNode()
+        
+    
+    getIntersectionNode()
+    
+    
+    
+
 
 
 # @lc code=end
