@@ -90,6 +90,8 @@
         "variant": "cpp"
     },
     "cSpell.words": [
+        "appendleft",
+        "Fernet",
         "rtype"
     ],
     "autoHide.autoHideSideBar": true
