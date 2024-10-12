@@ -9,19 +9,19 @@
 
 
 from collections import deque
-
+from heapq import heapify, heappop
 
 class User:
     timeStamp = 0
 
     def __init__(self, id):
         self.id = id
-        self.post = deque()
+        self.post = []
         self.follows = set()
 
     def append_post(self, tweetID):
-        self.post.appendleft([User.timeStamp, tweetID])
-        User.timeStamp += 1
+        self.post.append([User.timeStamp, tweetID])
+        User.timeStamp -= 1
 
 
 class Twitter(object):
@@ -50,13 +50,17 @@ class Twitter(object):
         if not self.user.get(userId):
             self.user[userId] = User(userId)
 
-        List = [post for post in self.user[userId].post]
+        minHeap = [post for post in self.user[userId].post]
         for followeedId in self.user[userId].follows:
-            List += self.user[followeedId].post
+            minHeap += self.user[followeedId].post
 
-        List.sort(reverse=True)
+        result =[]
+        heapify(minHeap)
 
-        return [i[1] for i in List[:10]]
+        while minHeap and len(result) < 10:
+            result.append(heappop(minHeap)[1])
+            
+        return result
 
     def follow(self, followerId, followeeId):
         """
