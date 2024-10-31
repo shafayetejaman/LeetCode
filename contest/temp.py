@@ -6,3 +6,5 @@ class Solution:
         ans = [0] * len(nums)
         for idx, val in enumerate(ans):
             val = nums                                
+            val = nums                                
+            val = nums                                
