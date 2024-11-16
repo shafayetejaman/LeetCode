@@ -18,5 +18,6 @@ class User
     }
 }
 
-let user = new User( 'Bob' );
-console.log( user );
+let user = new User( 'Bob',{} );
+console.log(user);
+

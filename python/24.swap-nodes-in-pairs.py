@@ -21,7 +21,7 @@ class Solution(object):
         :rtype: ListNode
         """
         dummy = ListNode(0, head)
-        p=dummy
+        p = dummy
 
         while p.next and p.next.next:
             i = p.next
