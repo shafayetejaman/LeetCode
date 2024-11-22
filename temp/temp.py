@@ -32,7 +32,6 @@ class Shop:
                     cost = item.price * buy_quantity
                     if taka >= cost:
                         item.quantity -= buy_quantity
-                        return f"Congrass!After Buying {buy_quantity} units {product_name} Your Reamining Blance is:{taka-cost}"
 
                     else:
                         return f"Please Provide More Money{cost-taka}"
