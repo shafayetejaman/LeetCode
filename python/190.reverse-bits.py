@@ -10,10 +10,12 @@ class Solution:
     # @param n, an integer
     # @return an integer
     def reverseBits(self, n: int) -> int:
-        s = str(n)[::-1]
-        print(f"{s=} {n=}")
-        return int(n)
-
+        ans = 0
+        for i in range(32):
+            if n & 1:
+                ans |= 1 << (31 - i)
+            n >>= 1
+        return ans
 
 
 # @lc code=end
