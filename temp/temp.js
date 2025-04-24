@@ -1,6 +1,6 @@
 class Address
 {
-    constructor ( zip, street )
+    constructor (zip, street)
     {
         this.zip = zip;
         this.street = street;
@@ -9,7 +9,7 @@ class Address
 
 class User
 {
-    constructor ( name, { age, phone, address } )
+    constructor (name, { age, phone, address })
     {
         this.name = name;
         this.age = age;
@@ -18,6 +18,6 @@ class User
     }
 }
 
-let user = new User( 'Bob',{} );
-console.log(user);
+let user = new User('Bob', {});
+console.log("user: ", user);
 
