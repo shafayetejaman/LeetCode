@@ -19,11 +19,11 @@ class Solution:
 
         for i in range(n):
             last = k
-            l, r = 0, k - 1 
+            l, r = 0, k - 1
             while l <= r:
                 m = l + (r - l) // 2
                 p = potions[m] * spells[i]
-              
+
                 if p >= success:
                     r = m - 1
                     last = m
