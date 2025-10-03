@@ -1,5 +1,14 @@
 {
     "code-runner.executorMap": {
-        "python": "cd $dir && echo \" \" && python3 $fileName < input.txt > output.txt",
+        "javascript": "echo \" \" && node",
+        "python": "cd $dir && echo \" \" && python $fileName",
+        "c": "echo \" \" && cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && ./$fileNameWithoutExt.exe ",
+        "cpp": "echo \" \" && cd $dir && g++ -w $fileName -o $fileNameWithoutExt.exe && ./$fileNameWithoutExt.exe",
+        "typescript": "cd $dir && tsc $fileName && echo \" \" && node $fileNameWithoutExt.js",
+        "csharp": "cd $dir && dotnet run $fileName",
     },
+    
+  "leetcode.workspaceFolder": "E:\\Downloads\\Documents\\Programs\\LeetCode\\python",
+  "leetcode.nodePath": "C:\\Program Files\\nodejs\\node.exe"
+
 }
