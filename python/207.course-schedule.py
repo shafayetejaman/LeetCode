@@ -10,6 +10,7 @@ from typing import List
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+<<<<<<< HEAD
         adjList = {pre[0]: [] for pre in prerequisites}
         for sub, pre in prerequisites:
             adjList[sub].append(pre)
@@ -45,3 +46,9 @@ class Solution:
 
 s = Solution()
 print(s.canFinish(2, [[1, 0], [0, 1]]))
+=======
+        
+        
+# @lc code=end
+
+>>>>>>> bdd0e9f80db80691e65b670fd7bcd499ebca8d4b

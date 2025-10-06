@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+    // "code-runner.executorMap": {
+    //     "python": "cd $dir && echo \" \" && python3 $fileName < input.txt > output.txt",
+    // },
+=======
     "code-runner.executorMap": {
         "javascript": "echo \" \" && node",
         "python": "cd $dir && echo \" \" && python $fileName",
@@ -11,4 +16,5 @@
   "leetcode.workspaceFolder": "E:\\Downloads\\Documents\\Programs\\LeetCode\\python",
   "leetcode.nodePath": "C:\\Program Files\\nodejs\\node.exe"
 
+>>>>>>> 104da0f5dc1d28d71749e751177791d69b086fd3
 }

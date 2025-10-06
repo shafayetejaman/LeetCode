@@ -1,6 +1,10 @@
-0
-0
 1
-1
-2
-3
+Node: 1, Parent: None, Grandparent: None
+Node: 2, Parent: 1, Grandparent: None
+Node: 3, Parent: 1, Grandparent: None
+Node: 4, Parent: 2, Grandparent: 1
+Node: 5, Parent: 2, Grandparent: 1
+Node: 6, Parent: 3, Grandparent: 1
+Level 0: [1]
+Level 1: [2, 3]
+Level 2: [4, 5, 6]
