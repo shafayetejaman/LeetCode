@@ -1,5 +1,5 @@
 {
-    "code-runner.executorMap": {
-        "python": "cd $dir && echo \" \" && python3 $fileName < input.txt > output.txt",
-    },
+    // "code-runner.executorMap": {
+    //     "python": "cd $dir && echo \" \" && python3 $fileName < input.txt > output.txt",
+    // },
 }
